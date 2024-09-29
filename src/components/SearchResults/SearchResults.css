@@ -1,0 +1,70 @@
+.search-results {
+  padding: 20px;
+}
+
+.paper-display-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+}
+
+.paper-display-list p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Ensure that PaperItem components have proper alignment */
+.paper-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  border: 1px solid #ddd; /* Optional border */
+  border-radius: 8px; /* Optional rounded corners */
+  padding: 10px; /* Space inside the item */
+  width: 100%; /* Adjust width if needed */
+  max-width: 300px; /* Optional maximum width */
+}
+
+.paper-item img {
+  max-width: 100%; /* Ensure image fits within its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.paper-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+}
+
+.paper-item-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.paper-item-name p {
+  margin: 0; /* Remove default margins */
+  padding: 5px 0; /* Optional padding */
+}
+
+.paper-item-desc {
+  font-size: 16px;
+  color: #555;
+}
+
+.paper-item-slot {
+  font-size: 14px;
+  color: #888;
+}
+
+
+.search-results {
+  padding: 20px;
+}
+
+.search-results h1 {
+  text-align: left; /* Aligns text to the left */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold; /* Optional: make the font bold */
+}

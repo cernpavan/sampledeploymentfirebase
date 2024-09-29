@@ -1,0 +1,29 @@
+/* Existing styles */
+
+
+.search-bar .form-control{
+    border-radius: 20px!important;
+    padding: 20px!important;
+    height: 55px;
+}
+
+.latest-bg{
+    background: url(/papper-bg.jpg) no-repeat;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:1;
+}
+.latest-bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: #4e4e4e;
+    border-top: 0;
+    padding-top: 80px;
+    width: 100%;
+    opacity: 0.8;
+    height: 100%;
+    border-radius: 4px;
+    z-index: -1;
+}

@@ -1,0 +1,126 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #0d6efd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Flipkart-style navbar */
+.row-container {
+    list-style: none;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust size as needed */
+    gap: 10px; /* Space between items */
+    background-color: #2874f0; /* Flipkart blue */
+    padding: 10px;
+}
+
+.row-container li {
+    padding: 10px 20px;
+    background-color: #2874f0; /* Same color as Flipkart's */
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.row-container li:hover {
+    background-color: #0056b3; /* Hover effect similar to Flipkart */
+}
+
+/* Bottom panel */
+.menu-panel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left and right menus aligned horizontally */
+.menu-container {
+    display: flex;
+    width: 100%;
+}
+
+.left-menu {
+    list-style-type: none;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ccc;
+}
+
+.left-menu li {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.left-menu li:hover {
+    background-color: #ddd;
+}
+
+.right-menu {
+    width: 70%;
+    padding: 20px;
+}
+
+.submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+.submenu li:hover {
+    background-color: #ececec;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile view */
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .left-menu {
+        width: 100%;
+    }
+
+    .right-menu {
+        width: 100%;
+    }
+}

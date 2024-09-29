@@ -1,0 +1,77 @@
+.paper-upload {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: #6d6d6d;
+  font-size: 16px;
+}
+
+.paper-upload form {
+  gap: 1px; /* Reduced gap between form fields */
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Reduced gap between items in flex column */
+}
+
+.upload-section {
+  width: max(40%, 280px);
+}
+
+.upload-section input,
+.upload-section select {
+  padding: 8px; /* Reduced padding */
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.upload-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px; /* Increased padding for larger button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px; /* Increased font size */
+  width: max(40%, 280px);
+  margin-top: 20px; /* Increased margin-top for space above the button */
+  margin-bottom: 40px; /* Ensures a small gap below the button */
+}
+
+.upload-button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.paper-upload-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paper-upload form input[type="file"] {
+  width: 100%;
+}
+
+.file-upload-info {
+  margin-top: 10px;
+}
+
+.paper-uploader-button button{
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px; /* Increased font size */
+  width: max(40%, 280px);
+  margin-top: 10px; /* Increased margin-top for space above the button */
+  margin-bottom: 10px;
+  text-align: center;
+}

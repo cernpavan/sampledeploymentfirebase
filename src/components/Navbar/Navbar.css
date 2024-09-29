@@ -1,0 +1,100 @@
+body{
+    background: #f0f0f0;
+}
+.header {
+    background-color: #3b3b3b;
+}
+  
+.pd-50{
+    padding: 50px 0px;
+}
+  .navbar-logo {
+    height: 45px;
+  }
+  .header .navbar-nav .nav-link {
+    font-size: 15px;
+    color: #ffffff!important;
+    font-weight: 500 !important;
+    transition: all .3s ease-in;
+    text-transform: capitalize;
+    padding:0rem 1rem 0;
+    letter-spacing: 0.6px;
+}
+
+  
+.page-upload{
+    height: 80px;
+}
+ 
+  
+
+  
+  .navbar-search-input {
+     border-radius: 20px!important;
+  }
+  
+
+  
+  /* Hamburger icon */
+  .navbar-hamburger {
+    display: none;
+  }
+  
+  .btn-search{
+    padding: 6px 17px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    border-radius: 0px 5px 5px 0px !important;
+    height: 40px !important;
+    text-transform: capitalize !important;
+  }
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+        border-radius: 5px 0px 0px 5px!important;
+        height: 44px!important;
+        border: 1px solid #fff!important;
+        border-right: 0px!important;
+        color: #fff!important;
+  }
+
+  
+ 
+ /* Navbar.css */
+
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: #fff;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+    }
+    .header .navbar-nav .nav-link{
+        padding: 0.6rem 0rem;
+      }
+      .header .navbar-nav .nav-link:last-child .nav-item{
+        padding-bottom: 20px;
+      }
+  
+    .Toastify{
+      display: none;
+    }
+    .banner-contents h2{
+        line-height: 50px;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        filter: invert(1);
+    }
+    .navbar-light .navbar-toggler{
+        border-color: rgb(255 255 255 / 50%);
+    }
+    .navbar-logo{
+        width: 115px;
+    }
+  }
+  
